@@ -19,4 +19,5 @@ class UrlTestCase(TestCase):
     def test_url_modificada_menor_que_original(self):
         self.assertLess(len(self.google.url_modificada), len(self.google.url_original), "Url modificada não é menor que a original ")
 
-        
+    #def test_validate_unique_url_modificada(self):
+       # validate_unique # Model.validate_unique
