@@ -4,7 +4,7 @@ import string
 
 class Url(models.Model):
     url_original = models.URLField(max_length=255)
-    url_modificada = models.CharField(max_length=20, blank=True)
+    url_modificada = models.URLField(max_length=20, blank=True)
     numero_clicks = models.IntegerField(default=0)
     
     def get_absolute_url(self):
